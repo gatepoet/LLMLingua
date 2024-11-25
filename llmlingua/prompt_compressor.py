@@ -70,9 +70,9 @@ class PromptCompressor:
 
     def __init__(
         self,
-        model_name: str = "NousResearch/Llama-2-7b-hf",
+        model_name: str = "NousResearch/Hermes-3-Llama-3.1-8B-GGUF",
         device_map: str = "cuda",
-        model_config: dict = {},
+        model_config: dict = {"gguf_file": "Hermes-3-Llama-3.1-8B.Q4_K_M.gguf"},
         open_api_config: dict = {},
         use_llmlingua2: bool = False,
         llmlingua2_config: dict = {},
